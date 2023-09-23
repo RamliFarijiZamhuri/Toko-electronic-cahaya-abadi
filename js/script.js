@@ -40,13 +40,34 @@ document.addEventListener('click', function (e) {
 
 // Modal Box
 const itemDetailModal = document.querySelector('#item-detail-modal');
-const itemDetailButtons = document.querySelectorAll('.item-detail-button');
+document.querySelector('.item-detail-button').onclick = (e) => {
+    itemDetailModal.style.display = 'flex';
+    e.preventDefault();
+};
 
-itemDetailButtons.forEach((btn) => {
-    btn.onclick = (e) => {
-        itemDetailModal.style.display = 'flex';
-        e.preventDefault();
-    };
+
+
+const itemDetailModal2 = document.querySelector('#item-detail-modal-2');
+document.querySelector('.item-detail-button-2').onclick = (e) => {
+    itemDetailModal2.style.display = 'flex';
+    e.preventDefault();
+};
+
+
+
+const itemDetailModal3 = document.querySelector('#item-detail-modal-3');
+document.querySelector('.item-detail-button-3').onclick = (e) => {
+    itemDetailModal3.style.display = 'flex';
+    e.preventDefault();
+};
+
+
+
+const itemDetailModal4 = document.querySelector('#item-detail-modal-4');
+document.querySelector('.item-detail-button-4').onclick = (e) => {
+    itemDetailModal4.style.display = 'flex';
+    e.preventDefault();
+};
 })
 
 
